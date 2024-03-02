@@ -1,6 +1,7 @@
 import * as React from "react";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import LoadingSplash from './screens/LoadingSplash';
 import Onboarding0 from './screens/Onboarding0';
 import Onboarding1 from './screens/Onboarding1';
 import Onboarding2 from './screens/Onboarding2';
@@ -28,7 +29,8 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Onboarding0">
+      <Stack.Navigator initialRouteName="LoadingSplash">
+        <Stack.Screen name="LoadingSplash" component={LoadingSplash} options={{ headerShown: false }} />
         <Stack.Screen name="Onboarding0" component={Onboarding0} options={{ headerShown: false }} />
         <Stack.Screen name="Onboarding1" component={Onboarding1} options={{ headerShown: false }} />
         <Stack.Screen name="Onboarding2" component={Onboarding2} options={{ headerShown: false }} />
