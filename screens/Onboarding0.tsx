@@ -40,7 +40,7 @@ const Onboarding0: React.FC<Onboarding0Props> = ({ navigation }) => {
 
         <Image
           style={styles.shadow}
-          source={require("../assets/shadow.png")}
+          source={require("../assets/shadow1.png")}
         />
 
         <Image
